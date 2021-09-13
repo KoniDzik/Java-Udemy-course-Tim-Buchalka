@@ -1,0 +1,14 @@
+public class BarkingDog {
+  public static boolean shouldWakeUp(boolean barking, int houreOfTheDay) {
+        if (!barking || houreOfTheDay < 0 || houreOfTheDay > 23) {
+            return false;
+        } else if (barking && (houreOfTheDay < 8 || houreOfTheDay > 22)) {
+            return true;
+        }
+        else if (barking && (houreOfTheDay < 0 || houreOfTheDay > 23)){
+            return false;
+        } return false;
+
+
+    }
+}
